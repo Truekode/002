@@ -5,6 +5,10 @@
     --subscribe-wrp: 448px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -65,6 +69,17 @@ body {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
+    position: relative;
+}
+
+.brand__title:after {
+    content: '';
+    width: 12px;
+    height: 100%;
+    background: #F16D7F;
+    position: absolute;
+    top: 0;
+    left: -20px;
 }
 
 .brand__sub-title {
@@ -163,6 +178,48 @@ body {
     box-sizing: border-box;
 }
 
+.products__item-wrp {
+    position: relative;
+}
+
+.products__wrp-button {
+    width: 138px;
+    height: 43px;
+    border: 1px solid #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.products__item-wrp:before {
+    display: none;
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    background: rgba(0, 0, 0, 0.31);
+    position: absolute;
+    top: 0;
+}
+
+.products__item:hover .products__item-wrp:before {
+    display: block;
+}
+
+.products__item:hover .products__wrp-button {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .products__item-img {
     margin-bottom: 25px;
 }
@@ -198,6 +255,13 @@ body {
     line-height: 19px;
     color: #F26376;
     background: transparent;
+    border: 1px solid #FF6A6A;
+}
+
+.products__button:hover,
+.products__button:focus {
+    color: #FFFFFF;
+    background: #F16D7F;
     border: 1px solid #FF6A6A;
 }
 
@@ -245,6 +309,7 @@ body {
 .subscribe {
     background: url("./img/subscribe.jpg") no-repeat;
     min-height: var(--subscribe-wrp);
+    background-size: 100% 100%;
 }
 
 .subscribe-wrp {
@@ -281,6 +346,7 @@ body {
     font-size: 24px;
     line-height: 40px;
     text-align: center;
+    margin-bottom: 32px;
 }
 
 .subscribe-wrp__sub-title {
@@ -291,6 +357,37 @@ body {
     text-align: center;
 }
 
+.subscribe-wrp__form-email{
+    padding: 0 0 0 22px;
+    background: #E1E1E1;
+    height: 49px;
+    width: 256px;
+    border: none;
+    -webkit-border-radius: 40px 0px 0px 40px;
+    -moz-border-radius: 40px 0px 0px 40px;
+    border-radius: 40px 0px 0px 40px;
+}
+
+.subscribe-wrp__form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe-wrp__form-button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    -webkit-border-radius: 0px 40px 40px 0px;
+    -moz-border-radius: 0px 40px 40px 0px;
+    border-radius: 0px 40px 40px 0px;
+    background: #F16D7F;
+    height: 49px;
+    width: 100px;
+    border: none;
+}
 .сopyright {
     background: var(--black);
     font-size: 16px;
@@ -312,4 +409,22 @@ body {
 
 .copyright-wrp__item {
     margin-right: 9px;
+}
+
+.footer__svg {
+    fill: white;
+}
+
+.footer__svg-item {
+    fill: black;
+}
+
+
+.footer__svg:hover,
+.footer__svg:focus {
+    fill: #F16D7F;
+}
+.footer__svg:hover .footer__svg-item,
+.footer__svg:focus .footer__svg-item{
+    fill: white;
 }
