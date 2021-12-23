@@ -8,14 +8,13 @@
       <link href="https://fonts.googleapis.com" rel="preconnect">
       <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./registration.css">
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__wrp">
           <div>
-            <img alt="logo" class="header__logo" src="./img/logo.svg">
+            <a href="./index.html"><img alt="logo" class="header__logo" src="./img/logo.svg"></a>
             <img alt="loupe" class="header__search" src="./img/search.svg">
           </div>
           <div>
@@ -95,8 +94,10 @@
             <label class="visually-hidden" for="password">password</label>
             <input class="registration__form-input" type="password" placeholder="Password" id="password">
           </fielset>
-          <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-          <button class="registration__form-button">join now <span class="registration__sub-title">&#8594;</span></button>
+          <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+            lowercase letters</p>
+          <button type="submit" class="registration__form-button">join now <span
+                  class="registration__sub-title">&#8594;</span></button>
         </form>
         <div class="registration__wrp">
           <h2 class="registration__wrp-title">loyalty has its perks</h2>
