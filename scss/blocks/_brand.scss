@@ -1,0 +1,34 @@
+.brand {
+  background-color: $pink-bkg;
+  display: flex;
+  align-items: center;
+}
+
+.brand__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  position: relative;
+}
+
+.brand__title:after {
+  content: '';
+  width: 12px;
+  height: 100%;
+  background: #F16D7F;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.brand__sub-title {
+  display: block;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.brand__sub-title--pink {
+  color: $pink-txt;
+}

@@ -1,0 +1,46 @@
+.sales {
+  margin-top: 65px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__item--woman {
+    background-image: url("../img/skids_box-1.jpg");
+  }
+
+  &__item--man {
+    background-image: url("../img/skids_box-2.jpg");
+  }
+
+  &__item--kids {
+    background-image: url("../img/skids_box-3.jpg");
+  }
+
+  &__item--shoes {
+    background-image: url("../img/skids_box-4.jpg");
+    flex-grow: 1;
+  }
+
+  &__item-title {
+    font-size: 24px;
+    color: var(--pink-txt);
+  }
+
+  &__item-text {
+    line-height: 28px;
+    color: #FFFFFF;;
+  }
+}
