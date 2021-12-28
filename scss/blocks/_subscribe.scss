@@ -1,0 +1,91 @@
+.subscribe {
+  background: url("../img/subscribe.jpg") no-repeat;
+  min-height: var(--subscribe-wrp);
+  background-size: 100% 100%;
+
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 140px;
+  }
+
+  &-wrp {
+    width: 100%;
+    min-height: $subscribe-wrp;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &-wrp__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-wrp__text {
+    margin-top: 30px;
+    width: 360px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &-wrp__form-wrp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &-wrp__form-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &-wrp__sub-title {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &-wrp__form-email{
+    padding: 0 0 0 22px;
+    background: #E1E1E1;
+    height: 49px;
+    width: 256px;
+    border: none;
+    -webkit-border-radius: 40px 0px 0px 40px;
+    -moz-border-radius: 40px 0px 0px 40px;
+    border-radius: 40px 0px 0px 40px;
+  }
+
+  &-wrp__form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  &-wrp__form-button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    -webkit-border-radius: 0px 40px 40px 0px;
+    -moz-border-radius: 0px 40px 40px 0px;
+    border-radius: 0px 40px 40px 0px;
+    background: #F16D7F;
+    height: 49px;
+    width: 100px;
+    border: none;
+  }
+}

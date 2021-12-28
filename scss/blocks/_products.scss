@@ -1,0 +1,131 @@
+.products {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+
+  &__about {
+    margin-bottom: 46px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    background: #F8F8F8;
+    margin-right: 20px;
+    max-width: 360px;
+    min-height: 580px;
+    box-sizing: border-box;
+  }
+
+  &__item-wrp {
+    position: relative;
+  }
+
+  &__wrp-button {
+    width: 138px;
+    height: 43px;
+    border: 1px solid #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  &__wrp-button:hover,
+  &__wrp-button:focus {
+    opacity: 0.9;
+  }
+
+  &__item-wrp:before {
+    display: none;
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    background: rgba(0, 0, 0, 0.31);
+    position: absolute;
+    top: 0;
+  }
+
+  &__item:hover &__item-wrp:before {
+    display: block;
+  }
+
+  &__item:hover &__wrp-button {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__item-img {
+    margin-bottom: 25px;
+  }
+
+  &__item-title {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    margin-left: 18px;
+  }
+
+  &__item-about {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 0 28px 18px 16px;
+  }
+
+  &__item-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: $pink-txt;
+    margin-left: 18px;
+  }
+
+  &__button {
+    margin-top: 48px;
+    width: 211px;
+    min-height: 47px;
+    font-size: 16px;
+    line-height: 19px;
+    color: $pink-txt;
+    background: transparent;
+    border: 1px solid $pink-txt;
+  }
+
+  &__button:hover,
+  &__button:focus,
+  &__button:active {
+    color: #FFFFFF;
+    background: $pink-txt;
+    border: 1px solid $pink-txt;
+  }
+}

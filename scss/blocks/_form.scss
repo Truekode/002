@@ -1,0 +1,36 @@
+.form {
+  &__legend {
+    margin-bottom: 20px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__radio {
+    margin: 0;
+  }
+
+  &__wrp-radio {
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  &__sex {
+    margin-left: 10px;
+    margin-right: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 13px;
+  }
+
+  &__text {
+    max-width: 359px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 55px;
+    color: #B1B1B1;
+  }
+}

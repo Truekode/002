@@ -1,0 +1,23 @@
+.footer {
+
+
+  &__svg {
+    fill: white;
+  }
+
+  &__svg-item {
+    fill: black;
+  }
+
+
+  &__svg:hover,
+  &__svg:focus,
+  &__svg:active {
+    fill: #F16D7F;
+  }
+
+  &__svg:hover &__svg-item,
+  &__svg:focus &__svg-item {
+    fill: white;
+  }
+}

@@ -3,6 +3,7 @@
 
   &__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -13,8 +14,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 20px;
     margin-bottom: 20px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet {
+      width: 32%;
+      min-height: 168px;
+    }
+
+    @include mobile {
+      width: 100%;
+      min-height: 247px;
+    }
   }
 
   &__item--woman {
@@ -31,12 +44,15 @@
 
   &__item--shoes {
     background-image: url("../img/skids_box-4.jpg");
-    flex-grow: 1;
+    width: 100%;
+    @include tablet {
+      min-height: 116px;
+    }
   }
 
   &__item-title {
     font-size: 24px;
-    color: var(--pink-txt);
+    color: $pink-txt;
   }
 
   &__item-text {
