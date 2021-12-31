@@ -1,0 +1,31 @@
+.copyright {
+  background: $black;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+
+  &-wrp {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-wrp__list {
+    display: flex;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-wrp__item {
+    margin-right: 9px;
+  }
+}
+
