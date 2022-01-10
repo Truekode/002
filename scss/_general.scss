@@ -1,5 +1,15 @@
-button:hover {
+button:hover,
+input:hover {
   cursor: pointer;
+}
+
+button:hover,
+button:focus,
+button:active,
+a:hover,
+a:focus,
+a:active {
+  opacity: 0.8;
 }
 
 .visually-hidden {

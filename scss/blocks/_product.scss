@@ -1,0 +1,141 @@
+.product {
+
+  &-wrapper {
+    min-height: 148px;
+    background: #F8F3F4;
+  }
+
+  &-wrapper__title {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    padding-top: 65px;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-wrapper__title-gray {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 65px;
+    color: gray;
+  }
+
+  &__sub-title {
+    color: #F16D7F;
+  }
+
+  &__collection {
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__collection-btn {
+    margin-bottom: 65px;
+    margin-top: 48px;
+    width: 211px;
+    height: 48px;
+    background: none;
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
+    @include font(16px, 19px);
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__wrp-btn {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+  }
+
+  &__collection-title {
+    margin-top: 64px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    position: relative;
+    margin-bottom: 27px;
+  }
+
+  &__collection-title:before {
+    content: '';
+    width: 63px;
+    height: 3px;
+    background: #EF5B70;
+    position: absolute;
+    top: 30;
+    left: 40;
+  }
+
+  &__collection-subtitle {
+    margin-bottom: 48px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D
+  }
+
+  &__collection-text {
+    width: 65%;
+    margin-bottom: 38px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    text-transform: none;
+    position: relative;
+  }
+
+  &__collection-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin-bottom: 130px;
+  }
+
+
+  &__collection-text:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #EAEAEA;
+    top: 180;
+  }
+
+  &__list {
+    flex-wrap: nowrap;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__item:last-child {
+    @include tablet {
+      display: none;
+    }
+  }
+}

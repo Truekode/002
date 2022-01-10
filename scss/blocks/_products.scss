@@ -119,6 +119,7 @@
     color: $pink-txt;
     background: transparent;
     border: 1px solid $pink-txt;
+    transition: color 700ms, background 700ms, border 700ms;
   }
 
   &__button:hover,
