@@ -68,6 +68,11 @@
     border-radius: 40px 0px 0px 40px;
   }
 
+  &-wrp__form-email:hover,
+  &-wrp__form-email:focus {
+    outline: 1px solid #F16D7F;
+  }
+
   &-wrp__form {
     display: flex;
     align-items: center;
@@ -87,5 +92,40 @@
     height: 49px;
     width: 100px;
     border: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
   }
+
+  @keyframes move-light {
+    from {
+      transform: translateX(-4em) skewX(-45deg);
+    }
+    to {
+      transform: translateX(10em) skewX(-45deg);
+    }
+  }
+
+  &-wrp__form-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-4em) skewX(-45deg);
+  }
+
+  &-wrp__form-button:hover {
+    opacity: 1;
+  }
+
+  &-wrp__form-button:hover:before,
+  &-wrp__form-button:active:before,
+  &-wrp__form-button:focus:before{
+    animation: move-light 0.5s;
+  }
+
+
 }
