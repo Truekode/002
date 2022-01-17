@@ -1,0 +1,146 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+
+  &__wrp-breadcramb {
+    text-transform: uppercase;
+  }
+
+  &__wrp-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__wrp-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 20px;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    @include mobile {
+
+    }
+  }
+
+  &__wrp-item {
+    color: gray;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 148px;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__wrapper-title {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+  }
+
+  &__path:before {
+    content: '/';
+    position: absolute;
+    color: gray;
+    left: -12px;
+  }
+
+  &__wrp-item:last-child {
+    color: #F16D7F;
+  }
+
+  &-wrapper {
+    min-height: 148px;
+    background: #F8F3F4;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+
+    @include tablet {
+      width: 360px;
+    }
+  }
+
+  &__item:last-child {
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__pagination {
+    border: 1px solid #EBEBEB;
+    margin-top: 50px;
+    display: flex;
+    grid-column-gap: 20px;
+    padding: 15px;
+  }
+
+  &__pagination-item {
+    position: relative;
+  }
+
+  &__pagination-btn {
+    @include font(16px,19px,300);
+    color: #808080;
+    border: none;
+    background: none;
+  }
+
+  &__pagination-btn-row {
+    @include font(20px,19px,300);
+    border: none;
+    background: none;
+  }
+
+  &__pagination-item:nth-last-child(-n+2):before {
+    content: '...';
+    position: absolute;
+    color: #808080;
+    left: -15px;
+  }
+
+  &__pagination-item:first-child {
+    color: black;
+  }
+
+  &__pagination-active {
+    color: $pink-txt;
+  }
+}
