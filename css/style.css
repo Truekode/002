@@ -1134,4 +1134,246 @@ body {
   }
 }
 
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.catalog__wrp-breadcramb {
+  text-transform: uppercase;
+}
+.catalog__wrp-list {
+  display: flex;
+  align-items: center;
+}
+.catalog__wrp-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 20px;
+}
+@media (max-width: 1599px) {
+  .catalog__wrp-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.catalog__wrp-item {
+  color: gray;
+}
+.catalog__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 148px;
+}
+@media (max-width: 767px) {
+  .catalog__container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+.catalog__wrapper-title {
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+.catalog__path:before {
+  content: "/";
+  position: absolute;
+  color: gray;
+  left: -12px;
+}
+.catalog__wrp-item:last-child {
+  color: #F16D7F;
+}
+.catalog-wrapper {
+  min-height: 148px;
+  background: #F8F3F4;
+}
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1599px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .catalog__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1599px) {
+  .catalog__item {
+    width: 360px;
+  }
+}
+@media (max-width: 1599px) {
+  .catalog__item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item:last-child {
+    display: block;
+  }
+}
+.catalog__pagination {
+  border: 1px solid #EBEBEB;
+  margin-top: 50px;
+  display: flex;
+  grid-column-gap: 20px;
+  padding: 15px;
+}
+.catalog__pagination-item {
+  position: relative;
+}
+.catalog__pagination-btn {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
+  color: #808080;
+  border: none;
+  background: none;
+}
+.catalog__pagination-btn-row {
+  font-size: 20px;
+  line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
+  border: none;
+  background: none;
+}
+.catalog__pagination-item:nth-last-child(-n+2):before {
+  content: "...";
+  position: absolute;
+  color: #808080;
+  left: -15px;
+}
+.catalog__pagination-item:first-child {
+  color: black;
+}
+.catalog__pagination-active {
+  color: #F1808F;
+}
+
+.filter {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+}
+@media (max-width: 1599px) {
+  .filter {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .filter {
+    width: 90%;
+  }
+}
+.filter__title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.filter__wrp-btn {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+}
+.filter__wrp {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+.filter__nav {
+  width: 360px;
+  position: relative;
+}
+.filter__wrappers[open] {
+  top: -22px;
+  left: -16px;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 13px 16px;
+}
+.filter__category {
+  padding-top: 24px;
+  padding-left: 34px;
+}
+.filter__wrappers-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.filter__item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 11px;
+  color: #6F6E6E;
+}
+.filter__title {
+  cursor: pointer;
+  display: block;
+}
+.filter__title::-webkit-details-marker {
+  display: none;
+}
+.filter__title-active {
+  height: 37px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 17px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #EF5B70;
+}
+.filter__title-active:before {
+  position: absolute;
+  content: "";
+  left: -17px;
+  width: 100%;
+  height: 2px;
+  background: #EBEBEB;
+  bottom: 0;
+}
+.filter__title-active:after {
+  position: absolute;
+  content: "";
+  left: -17px;
+  width: 5px;
+  height: 37px;
+  background: #EF5B70;
+}
+.filter__subtitle {
+  margin-right: 11px;
+}
+.filter__img {
+  fill: black;
+}
+.filter__wrappers[open] > .filter__img {
+  fill: #EF5B70;
+}
+
 /*# sourceMappingURL=style.css.map */
